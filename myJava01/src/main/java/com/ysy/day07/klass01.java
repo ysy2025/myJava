@@ -1,5 +1,7 @@
 package com.ysy.day07;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 /*
 面向对象
 0,面向对象的思想和面向过程的思想
@@ -42,5 +44,45 @@ void
 
  */
 public class klass01 {
-    
+    public static void main(String[] args) {
+        Man zhangsan = new Man();
+        System.out.println(zhangsan.getAge());
+
+        Man lisi = new Man();
+        System.out.println(lisi.getSex());
+    }
+
+}
+
+class Man{
+    private int age = 18;
+    private int height = 180;
+    private String sex = "F";
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+
+
 }
