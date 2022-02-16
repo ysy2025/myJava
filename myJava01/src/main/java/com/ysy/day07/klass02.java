@@ -21,18 +21,18 @@ package com.ysy.day07;
  */
 public class klass02 {
     public static void main(String[] args) {
-        Person a = new Person();
+        Company a = new Company();
         a.country = "China";
         System.out.println(a.country);
         a.eat("dinner");
         a.sleep(10);
 
-        Person b = new Person();
+        Company b = new Company();
         System.out.println(b.country);
 
 
         //c&a指向了同一个对象,所以一变则皆变
-        Person c = a;
+        Company c = a;
         System.out.println(c.country);
         c.country = "USA";
         System.out.println(a.country);
