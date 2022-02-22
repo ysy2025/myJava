@@ -1,0 +1,94 @@
+package p2.view;
+
+import p2.Util.CMUtility;
+import p2.service.CustomerList;
+
+/*
+CustomerView为主模块，负责菜单的显示和处理用户操作
+ */
+public class CustomerView {
+
+    CustomerList customerList = new CustomerList(10);
+
+
+    public static void main(String[] args){
+
+        CustomerView cv = new CustomerView();
+
+        cv.enterMainMenu();
+
+    };
+
+    /**
+     * 进入主页面
+     */
+    public void enterMainMenu() {
+
+        boolean isFlag = true;
+        while (isFlag = true){
+            //开幕雷击
+            System.out.println("\n-----------------客户信息管理软件-----------------\n");
+            System.out.println("                   1 添 加 客 户");
+            System.out.println("                   2 修 改 客 户");
+            System.out.println("                   3 删 除 客 户");
+            System.out.println("                   4 客 户 列 表");
+            System.out.println("                   5 退       出\n");
+            System.out.print("                   请选择(1-5)：");
+
+            // 用户选择
+            char menu = CMUtility.readMenuSelection();
+
+            switch(menu){
+                case '1':
+                    addNewCustomer();
+                    break;
+                case '2':
+                    modifyCustomer();
+                    break;
+                case '3':
+                    deleteCustomer();
+                    break;
+                case '4':
+                    listAllCustomers();
+                    break;
+                case '5':
+                    System.out.println("退出!!!!!!!!!!!!");
+                    break;
+            }
+
+            //退出的标志
+//            isFlag = false;
+        }
+    };
+
+
+    /**
+     * 添加客户
+     */
+    private void addNewCustomer() {
+        System.out.println("                   1 添 加 客 户");
+
+    };
+
+    /**
+     * 修改客户
+     */
+    private void modifyCustomer(){
+        System.out.println("                   2 修 改 客 户");
+    };
+
+    /**
+     * 删除客户
+     */
+    private void deleteCustomer(){
+        System.out.println("                   3 删 除 客 户");
+    };
+
+    /**
+     * 显示客户列表
+     */
+    private void listAllCustomers(){
+        System.out.println("                   4 客 户 列 表");
+    };
+
+}
