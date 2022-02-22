@@ -17,6 +17,9 @@ public class CustomerView {
 
         cv.enterMainMenu();
 
+        CustomerList myList = new CustomerList(10);
+
+
     };
 
     /**
@@ -25,7 +28,7 @@ public class CustomerView {
     public void enterMainMenu() {
 
         boolean isFlag = true;
-        while (isFlag = true){
+        while (isFlag){
             //开幕雷击
             System.out.println("\n-----------------客户信息管理软件-----------------\n");
             System.out.println("                   1 添 加 客 户");
@@ -53,7 +56,14 @@ public class CustomerView {
                     break;
                 case '5':
                     System.out.println("退出!!!!!!!!!!!!");
-                    break;
+                    System.out.println("Y/N:");
+                    char isExit = CMUtility.readConfirmSelection();
+                    System.out.println(isExit);
+                    if (isExit == 'Y'){
+                        isFlag = false;
+                    }else{
+                        System.out.println("enter wrong!");
+                    }
             }
 
             //退出的标志
@@ -67,7 +77,8 @@ public class CustomerView {
      */
     private void addNewCustomer() {
         System.out.println("                   1 添 加 客 户");
-
+        
+        
     };
 
     /**
@@ -89,6 +100,10 @@ public class CustomerView {
      */
     private void listAllCustomers(){
         System.out.println("                   4 客 户 列 表");
+
+        myList.getTotal();
+//        CustomerList cl = new CustomerList();
     };
+
 
 }
