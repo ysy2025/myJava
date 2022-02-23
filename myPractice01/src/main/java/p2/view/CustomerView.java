@@ -1,6 +1,7 @@
 package p2.view;
 
 import p2.Util.CMUtility;
+import p2.bean.Customer;
 import p2.service.CustomerList;
 
 /*
@@ -11,17 +12,12 @@ public class CustomerView {
     CustomerList customerList = new CustomerList(10);
 
 
-    public static void main(String[] args){
-
-        CustomerView cv = new CustomerView();
-
-        cv.enterMainMenu();
-
-        CustomerList myList = new CustomerList(10);
+    public CustomerView(){
+        Customer customer = new Customer("zhangsan", 'F', 1, "12312312311", "a1@qq.com");
+        customerList.addCustomer(customer);
 
 
-    };
-
+    }
     /**
      * 进入主页面
      */
@@ -99,11 +95,35 @@ public class CustomerView {
      * 显示客户列表
      */
     private void listAllCustomers(){
-        System.out.println("                   4 客 户 列 表");
+        System.out.println("---------------------------客户列表---------------------------");
 
-        myList.getTotal();
+
+        int total = customerList.getTotal();
+        if(total ==0){
+            System.out.println("没有任何客户记录！");
+        }else{
+            System.out.println("编号\t姓名\t性别\t年龄\t电话\t\t邮箱");
+            Customer[] allCustomers = customerList.getAllCustomers();
+            for (int i=0; i<allCustomers.length; i++){
+                Customer cust = allCustomers[i];
+                System.out.println((i+1) + "\t" + cust.getName() + "\t"+cust.getGender()+"\t"+cust.getAge()+"\t"+cust.getPhone()+"\t"+cust.getEmail()+"\t");
+            }
+        }
 //        CustomerList cl = new CustomerList();
+
+        System.out.println("-------------------------客户列表完成-------------------------");
     };
 
+
+    public static void main(String[] args){
+
+        CustomerView cv = new CustomerView();
+
+        cv.enterMainMenu();
+
+        CustomerList myList = new CustomerList(10);
+
+
+    };
 
 }
