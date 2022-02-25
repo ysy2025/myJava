@@ -73,7 +73,23 @@ public class CustomerView {
      */
     private void addNewCustomer() {
         System.out.println("                   1 添 加 客 户");
-        
+        System.out.println("请输入姓名: ");
+        String name = CMUtility.readString(10);
+
+        System.out.println("请输入性别: ");
+        char gender = CMUtility.readChar();
+
+        System.out.println("请输入年龄: ");
+        int age = CMUtility.readInt();
+
+        System.out.println("请输入手机: ");
+        String phone = CMUtility.readString(13);
+
+        System.out.println("请输入邮箱: ");
+        String email = CMUtility.readString(30);
+
+        Customer customer = new Customer(name, gender, age, phone, email);
+        customerList.addCustomer(customer);
         
     };
 
