@@ -73,5 +73,10 @@ public class MultiState01 {
         // 能不能通过person1来调用Man特有的方法?不能,因为earn方法没有被定义
         //
 //        person1.earn();
+
+        Person person2 = new Man();
+        // person2.earn(); // 这里的Man,没有定义earn,编译的时候,是Person类
+        //不能调用方法
+        //
     }
 }
