@@ -1,5 +1,7 @@
 package com.ysy.day13;
 
+import java.util.Date;
+
 /*
 多态性
 父类的引用指向之类的对象
@@ -78,5 +80,28 @@ public class MultiState01 {
         // person2.earn(); // 这里的Man,没有定义earn,编译的时候,是Person类
         //不能调用方法
         //
+
+        // 问题1, 编译时通过,运行时,不通过
+//        Person p3 = new Woman();
+//        Man m3 = (Man) p3;
+        // 编译时通过,运行时不通过
+//        Person p4 = new Woman();
+//        Man m4 = (Man) p4;
+
+
+        // 编译时通过,运行时也通过
+        Object o3 = new Woman();
+        Person p = (Person) o3;
+
+        // 编译不过
+        // Man woman1 = new Woman(); //类型不匹配
+
+        // 编译没办法通过
+        //String str = new Date();
+
+        // 编译通过,运行不过
+        Object o = new Date();
+        String str1 = (String) o;// 可以骗过编译器,但是实际执行的时候还是错误的.不相关的类是没办法相互转换的.
+
     }
 }
