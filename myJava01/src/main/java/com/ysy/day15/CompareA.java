@@ -2,6 +2,7 @@ package com.ysy.day15;
 
 /*
 * jdk8中,除了定义全局变量和抽象方法之外,interface还可以定义静态方法和默认方法
+* 通过实现类的对象,可以调用接口中的默认方法;
 *
  */
 public interface CompareA {
@@ -12,11 +13,11 @@ public interface CompareA {
 
     // 默认方法
     public default void method2(){
-        System.out.println("Compare B shanghai");
+        System.out.println("Compare A shanghai");
     }
 
     // public 可以省略
     default void method3(){
-        System.out.println("Compare C hefei");
+        System.out.println("Compare A hefei");
     }
 }
