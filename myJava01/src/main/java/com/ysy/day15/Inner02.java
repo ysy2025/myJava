@@ -31,3 +31,22 @@ public class Inner02 {
 
 }
 
+class AA{
+
+    String name;
+    int size;
+
+    public void show(){
+        int num = 10;
+        class BB{
+            /*
+            * 局部类中的方法(method方法)中,如果调用局部内部类所声明的方法(show方法)中的局部变量,需要次局部变量是final的
+            *
+             */
+            public void method(){
+                num = 20;
+                System.out.println(num);
+            }
+        }
+    }
+}
