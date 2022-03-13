@@ -44,7 +44,7 @@ class AA{
             *
              */
             public void method(){
-                num = 20;
+//                num = 20;
                 System.out.println(num);
             }
         }
