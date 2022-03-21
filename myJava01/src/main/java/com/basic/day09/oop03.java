@@ -1,9 +1,9 @@
 package com.basic.day09;
 
 /*
-构造器的使用,又叫构造方法(constructor)
+构造器的使用,又叫构造方法(builder.txt)
 
-constructor, construct, 构造,建造.
+builder.txt, construct, 构造,建造.
 1,构造器的作用
 创建对象
 初始化属性

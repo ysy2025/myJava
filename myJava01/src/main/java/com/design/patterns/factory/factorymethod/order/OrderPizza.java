@@ -1,7 +1,6 @@
 package com.design.patterns.factory.factorymethod.order;
 
-import com.design.patterns.factory.basic.Pizza;
-import com.design.patterns.factory.basic.SimpleFactory;
+import com.design.patterns.factory.factorymethod.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -31,13 +30,6 @@ public abstract class OrderPizza {
 
     // 定义一个抽象方法, 让各个工厂子类自己实现
     abstract Pizza createPizza(String orderType);
-
-    // 定义一个简单工厂对象
-
-    SimpleFactory sf;
-    // 定义pizza
-
-    Pizza pizza = null;
 
 
 

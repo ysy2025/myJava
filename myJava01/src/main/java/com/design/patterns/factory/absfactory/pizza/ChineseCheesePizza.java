@@ -1,6 +1,4 @@
-package com.design.patterns.factory.factorymethod.pizza;
-
-import com.design.patterns.factory.factorymethod.pizza.Pizza;
+package com.design.patterns.factory.absfactory.pizza;
 
 public class ChineseCheesePizza extends Pizza {
 

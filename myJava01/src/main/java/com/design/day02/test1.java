@@ -1,4 +1,4 @@
-package com.design.test;
+package com.design.day02;
 
 /*
 单例模式的8种写法
