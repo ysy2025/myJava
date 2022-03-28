@@ -1,18 +1,28 @@
 package com.design.patterns.command.client;
 
-import com.design.patterns.command.command.ConcreteCommand;
-import com.design.patterns.command.invoker.Invoker;
+import com.design.patterns.command.command.OffCommand;
+import com.design.patterns.command.command.OnCommand;
+import com.design.patterns.command.controller.Controller;
 import com.design.patterns.command.receiver.Receiver;
 
 public class Client {
     public static void main(String[] args) {
-        // 命令发布者
-        Invoker invoker = new Invoker(new ConcreteCommand());
+        // 使用命令设计模式,通过遥控器,对电灯进行操作
 
-        // 命令接受者
-        Receiver receiver = new Receiver(new ConcreteCommand());
+        // 创建点灯对象
+        Receiver receiver = new Receiver();
 
-        // 发布命令
-        invoker.publish(new ConcreteCommand());
+        // 创建点灯相关开关命令
+        OnCommand onCommand = new OnCommand(receiver);
+        OffCommand offCommand = new OffCommand(receiver);
+
+        // 创建遥控器
+        Controller controller = new Controller();
+
+        // 给遥控器设置相关命令,no=0是电灯开关
+        controller.setCommand(0, onCommand, offCommand);
+
+        System.out.println("--------------");
+        controller.onButtonWasPushed(0);
     }
 }

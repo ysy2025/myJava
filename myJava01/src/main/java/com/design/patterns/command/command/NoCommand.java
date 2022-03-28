@@ -1,13 +1,16 @@
 package com.design.patterns.command.command;
 
-public class ConcreteCommand implements Command {
+/*
+没有任何命令,即空执行,用于初始化每个按钮
+ */
+public class NoCommand implements Command {
     @Override
     public void execute() {
-        System.out.println("进攻!~");
+
     }
 
     @Override
     public void undo() {
-        System.out.println("撤退!~");
+
     }
 }
