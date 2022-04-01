@@ -11,6 +11,7 @@ package com.basic.day17.thread;
  * join 当前线程和另外的线程的合并(当前停止,切换到另外线程,直到另外线程结束,再启动当前线程)
  * stop 强制执行当前线程
  * sleep 让当前线程休息
+ * isalive 判断是否存货
  */
 
 class hisThread extends Thread{
@@ -78,6 +79,8 @@ public class Thread03 {
 
         hisThread02 histhread02 = new hisThread02("孙悟空");
         histhread02.start();
+
+        System.out.println(histhread02.isAlive());
     }
 }
 
