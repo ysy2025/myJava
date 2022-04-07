@@ -107,4 +107,5 @@
 
         reentrantlock 类实现了lock,拥有与synchronized相同的并发性和内存语义,
         在实现线程安全的控制中,常用的是reentrantlock,可以显式加锁,释放锁
+
     线程通信
