@@ -7,3 +7,16 @@ Set: 元素无序、不可重复的集合 集合
 Map接口: 双列数据,保存具有映射关系"key-value对"的集合 y=f(x)
 
 Collection 接口中的方法和使用
+
+List 接口概述
+ List集合类中元素有序、且可重复,集合中的每个元素都有其对应的顺序索引.
+List容器中的元素都对应一个整数型的序号记载其在容器中的位置,可以根据
+序号存取容器中的元素.
+JDK API中List接口的实现类常用的有: ArrayList、 LinkedList和Vector.
+
+ArrayList,LinkedList和Vector
+相同,三个类都实现了List接口,存储数据的特点相同,存储有序的可重复的数据
+不同:
+    ArrayList是主要实现类,效率高,线程不安全,底层结构使用了Object[]存储
+    LinkedList,底层实现使用了双向链表来实现的
+    Vector是古老实现类,线程安全,效率低;底层结构使用了Object[]存储

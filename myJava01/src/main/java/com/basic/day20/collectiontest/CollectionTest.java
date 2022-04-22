@@ -32,4 +32,27 @@ public class CollectionTest {
         }
 
     }
+
+    @Test
+    public void test2(){
+
+        Collection coll = new ArrayList();
+        coll.add(123);
+        coll.add(456);
+        coll.add("abc");
+        coll.add(new String("zhangsan"));
+        coll.add(true);
+        coll.add(new Person("zhang", 22));
+
+        Person p = new Person("lisi", 28);
+        coll.add(p);
+        boolean contains = coll.contains(123);
+
+        System.out.println(contains);
+
+        System.out.println(coll.contains(new String("zhangsan")));// 判断的是内容,而不是对象地址;
+        System.out.println(coll.contains(p));// 判断的是内容,而不是对象;
+        System.out.println(coll.contains(new Person("lisi", 28)));// 判断的是内容,而不是对象地址;但是由于,equals方法在Person对象中没有重写,因此会调用object中的方法,实质是==,而不是内容
+
+    }
 }
