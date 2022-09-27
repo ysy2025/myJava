@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.glodon.mybatis.mapper.FifaMapper">
+    <!--int insertUser();-->
+    <insert id="insertFifa">
+        insert into fifa values(1246272, "L. Messi", "31", "https://cdn.sofifa.org/players/4/19/158023.png", "Argentina", "https://cdn.sofifa.org/flags/52.png", "94", "94", "FC Barcelona", "https://cdn.sofifa.org/teams/2/light/241.png", "€110.5M", "€565K", "2202", "Left", "5", "4", "4", "Medium/ Medium", "Messi", "Yes", "RF", "10", "Jul 1; 2004", "", "2021", "5'7", "159lbs", "88+2", "88+2", "88+2", "92+2", "93+2", "93+2", "93+2", "92+2", "93+2", "93+2", "93+2", "91+2", "84+2", "84+2", "84+2", "91+2", "64+2", "61+2", "61+2", "61+2", "64+2", "59+2", "47+2", "47+2", "47+2", "59+2", "84", "95", "70", "90", "86", "97", "93", "94", "87", "96", "91", "86", "91", "95", "95", "85", "68", "72", "59", "94", "48", "22", "94", "94", "75", "96", "33", "28", "26", "6", "11", "15", "14", "8", "€226.5M")
+    </insert>
+    <!--void updateFifa()-->
+    <update id = "updateFifa">
+        update fifa set Name = "zhangsan" where id = 1246272;
+    </update>
+
+<!--    查询功能的标签必须设置resultType或者resultMap;resultType是默认的映射关系;resultMap是自定义的映射关系-->
+    <select id="getFifaById" resultType="fifa">
+        select * from fifa where id = 1246272;
+    </select>
+
+    <select id="getAllFifa" resultType="fifa">
+        select * from fifa where id > 1246270;
+    </select>
+</mapper>
