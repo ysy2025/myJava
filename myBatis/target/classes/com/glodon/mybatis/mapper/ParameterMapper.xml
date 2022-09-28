@@ -15,4 +15,14 @@
         select * from fifa where name = #{aaa}
     </select>
 
+<!--    Fifa checkLogin(String name, String age);-->
+    <select id="checkLogin" resultType="Fifa">
+        select * from fifa where name = #{arg0} and age = #{arg1}
+    </select>
+
+<!--    Fifa checkLoginByMap(Map<String, Object> map);-->
+    <select id="checkLoginByMap" resultType="Fifa">
+<!--        select * from fifa where name = #{name} and age = #{age}-->
+        select * from bike where id = #{name} and season = #{age}
+    </select>
 </mapper>
