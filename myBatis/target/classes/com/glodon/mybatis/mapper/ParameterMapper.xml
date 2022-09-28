@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//ENV"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.glodon.mybatis.mapper.ParameterMapper">
+<!--    List<Fifa> getAllFifa();-->
+    <select id="getAllFifa" resultType="Fifa">
+        select * from fifa where id = 1111;
+    </select>
+
+
+<!--    Fifa getFifaByName(String name);-->
+    <select id="getFifaByName" resultType="Fifa">
+<!--        select * from fifa where name = #{name}-->
+        select * from fifa where name = #{aaa}
+    </select>
+
+</mapper>
