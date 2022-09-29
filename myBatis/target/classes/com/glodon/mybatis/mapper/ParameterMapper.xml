@@ -25,4 +25,14 @@
 <!--        select * from fifa where name = #{name} and age = #{age}-->
         select * from bike where id = #{name} and season = #{age}
     </select>
+
+<!--    Fifa selectDetail(Fifa fifa);-->
+    <select id="selectDetail" resultType="Fifa">
+        select * from fifa limit 3;
+    </select>
+
+<!--    Fifa checkLoginByParam(@Param("name") String name, @Param("age") int age);-->
+    <select id="checkLoginByParam" resultType="Fifa">
+        select * from fifa where Name = #{name} and Age = #{age}
+    </select>
 </mapper>

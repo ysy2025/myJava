@@ -92,4 +92,20 @@ public class myBatisTest2 {
          * 只需要通过#{}和${}以属性的方式访问属性值即可但是需要注意${}的单引号问题
          */
     }
+
+    @Test
+    public void test2(){
+        /**
+         * 5注解 命名参数;
+         * 使用@Param注解来命名参数 两种方式存储
+         * 以@Param为注解的值为键;参数为值
+         * 以param1,param2为键,参数为值
+         * 因此只需要通过#{}和${}以键的方式访问即可;但是需要注意${}的单引号问题
+         *
+         */
+        SqlSession sqlSession = SqlSessionUtils.getSqlSession();
+        ParameterMapper mapper = sqlSession.getMapper(ParameterMapper.class);
+        Fifa fifa = mapper.checkLoginByParam("zhangsan", 31);
+        System.out.println(fifa);
+    }
 }
