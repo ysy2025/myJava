@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/util
+                          http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+    <!--        配置HelloWorld所对应的bean，即将HelloWorld的对象交给Spring的IOC容器管理-->
+    <!--        通过bean标签配置IOC容器所管理的bean-->
+    <!--        属性：-->
+    <!--        id：设置bean的唯一标识-->
+    <!--        class：设置bean所对应类型的全类名-->
+
+    <!--注入属性-->
+<!--    <bean id="helloworld" class="com.ysy.HelloWorld"></bean>-->
+
+    <!--首先设置id; 然后设置类; 将对象交给IOC容器管理
+    属性: id,bean的唯一标识,不能重复
+    class:设置bean对象对应的类型-->
+    <bean id = "studentOne" class = "com.ysy.Student"></bean>
+        <!-- property 标签,通过组件类的 setxxx 方法给组件对象设置属性-->
+        <!-- name 属性,指定属性名, getxxx setxxx 方法定义的,和成员变量无关-->
+        <!-- value 为属性赋的值 -->
+
+    <bean id = "studentTwo" class = "com.ysy.Student">
+        <property name="id" value="1001"></property>
+        <property name="name" value="zhangsan"></property>
+        <property name="age" value="23"></property>
+        <property name="sex" value="male"></property>
+    </bean>
+
+    <bean id = "studentThree" class = "com.ysy.Student">
+        <constructor-arg value = "1002"></constructor-arg>
+        <constructor-arg value = "lisi"></constructor-arg>
+        <constructor-arg value = "woman"></constructor-arg>
+        <constructor-arg value = "24" name = "score"></constructor-arg>
+    </bean>
+
+
+    <bean id = "studentFour" class = "com.ysy.Student">
+        <property name = "id" value = "1003"></property>
+        <property name = "name" value = "&lt;sunwukong&gt;"></property>
+        <property name="age" value="23"></property>
+        <property name = "sex" value = "man" >
+<!--        <property name = "sex">-->
+<!--            <null></null>-->
+        </property>
+    </bean>
+
+
+<!--    ref 是引用某个bean的id-->
+    <bean id = "studentFive" class = "com.ysy.Student">
+        <property name="id" value = "1004"></property>
+        <property name="name" value = "wangbadan"></property>
+        <property name="age" value = "23"></property>
+        <property name="sex" value = "haha"></property>
+<!--        <property name="clazz" ref = "clazzOne"></property>-->
+
+<!--&lt;!&ndash;        级联方式,保证提前为clazz属性赋值或者实例化&ndash;&gt;-->
+<!--        <property name="clazz.cid" value = "2222"></property>-->
+<!--        <property name="clazz.cname" value = "hengheng"></property>-->
+
+<!--内部 bean 只能当前bean的内部使用,无法被IOC调用使用-->
+        <property name="clazz">
+            <bean id = "clazzInner" class = "com.ysy.Clazz">
+                <property name="cid" value = "111"></property>
+                <property name="cname" value = "hahaha"></property>
+            </bean>
+
+        </property>
+
+        <property name="hobby">
+            <array>
+                <value>chouyan</value>
+                <value>hejiu</value>
+                <value>tangtou</value>
+            </array>
+        </property>
+
+        <property name="teacherMap" ref = "teacherMap"></property>
+<!--        <property name="teacherMap">-->
+<!--            <map>-->
+<!--                <entry key= "111" value-ref="teacherOne"></entry>-->
+<!--                <entry key= "222" value-ref="teacherTwo"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+    </bean>
+
+    <bean id = "clazzOne" class = "com.ysy.Clazz">
+        <property name="cid" value = "111"></property>
+        <property name="cname" value = "hahaha"></property>
+
+<!--        <property name="students">-->
+<!--            <list>-->
+<!--                <ref bean="studentOne"></ref>-->
+<!--                <ref bean="studentTwo"></ref>-->
+<!--                <ref bean="studentThree"></ref>-->
+<!--            </list>-->
+<!--        </property>-->
+
+        <property name="students" ref = "studentList"></property>
+    </bean>
+
+
+<!--    配置一个集合类型的bean需要使用util的约束  -->
+    <util:list id = "studentList">
+        <ref bean="studentOne"/>
+        <ref bean = "studentTwo"/>
+        <ref bean = "studentThree"/>
+    </util:list>
+
+
+    <util:map id = "teacherMap">
+        <entry key= "111" value-ref="teacherOne"></entry>
+        <entry key= "222" value-ref="teacherTwo"></entry>
+    </util:map>
+
+    <bean id="teacherOne" class="com.ysy.Teacher">
+        <property name="id" value = "111"></property>
+        <property name="name" value = "zhangsan"></property>
+    </bean>
+
+    <bean id="teacherTwo" class="com.ysy.Teacher">
+        <property name="id" value = "22"></property>
+        <property name="name" value = "lisi"></property>
+    </bean>
+
+    <bean id = "studentSix" class = "com.ysy.Student" p:id="1006" p:name="小明" p:teacherMap-ref="teacherMap">
+    </bean>
+</beans>

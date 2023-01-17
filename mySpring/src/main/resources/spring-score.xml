@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    scope: 设置bean的作用域
+  scope = singleton/prototype
+  singleton是单例模式
+  prototype是多例模式
+  -->
+    <bean id = "student" class = "com.ysy.Student">
+        <property name="id" value = "1001"></property>
+        <property name="name" value = "zhangsan"></property>
+    </bean>
+</beans>
