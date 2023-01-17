@@ -4,13 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    scope: 设置bean的作用域
-  scope = singleton/prototype
-  singleton是单例模式
-  prototype是多例模式
-  -->
-    <bean id = "student" class = "com.ysy.Student">
-        <property name="id" value = "1001"></property>
-        <property name="name" value = "zhangsan"></property>
+    <bean id = "user" class = "com.ysy.User" init-method="initMethod" destroy-method="destroyMethod">
+        <property name="id" value = "1"></property>
+        <property name="username" value = "zhangsan"></property>
+        <property name="password" value = "666"></property>
+        <property name="age" value = "23"></property>
     </bean>
+
 </beans>
