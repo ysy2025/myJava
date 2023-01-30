@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/myAOC/myAOC.iml" filepath="$PROJECT_DIR$/myAOC/myAOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myAOP/myAOP.iml" filepath="$PROJECT_DIR$/myAOP/myAOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/myAnnotation/myAnnotation.iml" filepath="$PROJECT_DIR$/myAnnotation/myAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mySpring2.iml" filepath="$PROJECT_DIR$/.idea/mySpring2.iml" />
     </modules>
