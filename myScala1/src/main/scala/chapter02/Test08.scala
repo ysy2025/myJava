@@ -37,10 +37,10 @@ object Test08 {
 
 
     //（ 2） String 类型转基本数值类型（语法：调用相关 API）
-    var s1 : String = "12"
-    var n1 : Byte = s1.toByte
-    var n2 : Short = s1.toShort
-    var n3 : Int = s1.toInt
-    var n4 : Long = s1.toLong
+//    var s1 : String = "12"
+//    var n1 : Byte = s1.toByte
+//    var n2 : Short = s1.toShort
+//    var n3 : Int = s1.toInt
+//    var n4 : Long = s1.toLong
   }
 }
