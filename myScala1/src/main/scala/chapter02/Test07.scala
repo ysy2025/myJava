@@ -24,4 +24,67 @@ package chapter02
  */
 object Test07 {
 
+  def main(args: Array[String]): Unit = {
+    val a1: Byte = 1
+    println(a1)
+
+    val a2: Long = 12123123123123123L
+    println(a2)
+
+    val a3 :Byte = 10
+    val a4 :Int = 13 + 20
+
+    println(a4)
+
+    val a5 = (a3 + 10).toByte
+    println(a5)
+
+    // float & double; 默认是double类型
+    val b1:Float = 1.234f
+    val b2 = 1.223
+
+
+    // char
+    val c1 = 'a'
+    println(c1)
+
+    // 特殊字符
+    val c2 = '\t'
+    val c3 = '\n'
+
+    // 转义字符
+    val c4 = '\\' // 表示反斜杠自身
+    val c5 = '\"'
+
+    /**
+     * 字符变量本身保存的是ASCII码
+     */
+    val c6 = '9'
+    val c7:Int = c6
+    println(c7)
+
+
+   // unit,是一个空括号
+
+    def sayOk:Unit={}
+    println(sayOk)
+
+    val d1 = sayOk
+    println(d1)
+
+    // null 值类型不能接受null;引用类型可以接受null
+    val d2 :Null = null
+    print(d2)
+
+    // Nothing
+    def sss(n:Int):Int={
+      if (n == 0){
+        throw new NullPointerException // 返回异常值是nothing
+      }
+      else{
+        return n
+      }
+
+    }
+  }
 }
