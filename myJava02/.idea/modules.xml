@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/myFlink01/myFlink01.iml" filepath="$PROJECT_DIR$/myFlink01/myFlink01.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/myJava02.iml" filepath="$PROJECT_DIR$/.idea/myJava02.iml" />
       <module fileurl="file://$PROJECT_DIR$/myTest01/myTest01.iml" filepath="$PROJECT_DIR$/myTest01/myTest01.iml" />
     </modules>
