@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="myTest01" />
         <module name="myFlink01" />
+        <module name="myTest01" />
+        <module name="myAntlr" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="myAntlr" target="1.5" />
       <module name="myFlink01" target="1.5" />
       <module name="myTest01" target="1.5" />
     </bytecodeTargetLevel>

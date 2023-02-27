@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ANTLRGenerationPreferences">
+    <option name="perGrammarGenerationSettings">
+      <list>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/myAntlr/src/main/resources/SqlBase.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="E:\Learning\Git\myJava\myJava02\myAntlr\src\main\java\sqlparser" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/myAntlr/src/main/resources/CustomParser.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="E:\Learning\Git\myJava\myJava02\myAntlr\src\main\java\customparser" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+      </list>
+    </option>
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/myTest01/pom.xml" />
         <option value="$PROJECT_DIR$/myFlink01/pom.xml" />
+        <option value="$PROJECT_DIR$/myAntlr/pom.xml" />
       </list>
     </option>
   </component>
