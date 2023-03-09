@@ -2,9 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
   <artifactId>myScala2</artifactId>
-  <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
   <inceptionYear>2008</inceptionYear>
-  <properties>
+    <modules>
+        <module>ECommerceRecommendSystem</module>
+      <module>ECommerceRecommendSystem/recommender</module>
+      <module>DataLoader</module>
+    </modules>
+    <properties>
     <scala.version>2.11.12</scala.version>
   </properties>
 

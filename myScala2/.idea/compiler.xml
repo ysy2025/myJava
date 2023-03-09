@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="myScala2" />
+        <module name="ECommerceRecommendSystem" />
+        <module name="recommender" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DataLoader" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
