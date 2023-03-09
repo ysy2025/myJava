@@ -20,6 +20,8 @@ object DataLoader {
   val spark = SparkSession.builder.master("local[4]").getOrCreate
   import spark.implicits._
 
+  def storeDataInMongoDB(productDF: DataFrame, ratingDF: DataFrame) = {}
+
   def main(args: Array[String]): Unit = {
 
     // 应用用到的配置参数
