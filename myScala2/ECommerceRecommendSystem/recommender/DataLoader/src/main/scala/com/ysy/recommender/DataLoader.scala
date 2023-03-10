@@ -1,6 +1,6 @@
-//package com.ysy.recommender
-//import org.apache.spark.sql.{DataFrame, SparkSession}
-//import org.apache.spark.{SparkConf, SparkContext}
+package com.ysy.recommender
+import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.{SparkConf, SparkContext}
 //
 //
 //
@@ -10,9 +10,14 @@
 //
 //case class MongoConfig(uri:String, db:String)
 //
-//object DataLoader {
-//  val PRODUCT_DATA_PATH = "src/main/resources/products.csv"
-//  val RATTING_DATA_PATH = "src/main/resources/rating.csv"
+object DataLoader {
+  def main(args: Array[String]): Unit = {
+
+    val PRODUCT_DATA_PATH = "src/main/resources/products.csv"
+    val RATTING_DATA_PATH = "src/main/resources/rating.csv"
+    println("zhangsan")
+  }
+}
 //
 //  val MONGODB_PRODUCT_COLLECTION = "Product"
 //  val MONGODB_RATING_COLLECTION = "Rating"
