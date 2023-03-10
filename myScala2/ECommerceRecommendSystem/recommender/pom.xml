@@ -11,6 +11,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>recommender</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>StatisticsRecommender</module>
+    </modules>
 
     <properties>
         <log4j.version>1.2.17</log4j.version>
