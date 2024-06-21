@@ -1,7 +1,7 @@
 package org.ysy.lease.model.entity;
 
-import com.atguigu.lease.model.enums.LeaseSourceType;
-import com.atguigu.lease.model.enums.LeaseStatus;
+import org.ysy.lease.model.enums.LeaseSourceType;
+import org.ysy.lease.model.enums.LeaseStatus;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;

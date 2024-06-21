@@ -3,7 +3,7 @@ package org.ysy.lease.model.enums;
 import com.baomidou.mybatisplus.annotation.EnumValue;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-public enum AppolintmentStatus implements BaseEnum{
+public enum AppointmentStatus implements BaseEnum{
 
     WAITING(1, "待看房"),
 
@@ -16,7 +16,7 @@ public enum AppolintmentStatus implements BaseEnum{
     private Integer code;
     private String name;
 
-    AppolintmentStatus(Integer code, String name) {
+    AppointmentStatus(Integer code, String name) {
         this.code = code;
         this.name = name;
     }

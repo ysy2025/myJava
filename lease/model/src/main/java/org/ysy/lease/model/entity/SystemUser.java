@@ -1,7 +1,7 @@
 package org.ysy.lease.model.entity;
 
 
-import com.atguigu.lease.model.enums.SystemUserType;
+import org.ysy.lease.model.enums.SystemUserType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;
