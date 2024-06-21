@@ -99,3 +99,16 @@ echo " --------------- 状态 hadoop101 ---------------"
 echo "Input Args Error..."
 ;;
 esac
+
+
+
+问题描述
+在将MyBatis-plus整合进Springboot项目时，启动后发生 MyBatis-plus ： Property ‘sqlSessionFactory‘ or ‘sqlSessionTemplate‘ are required错误。
+
+解决方法
+这种一般是版本问题，一开始想去官网上查，但发现官网登不上去，之后在gitee上的MyBatis-plus主页查找到了最新的版本，将依赖的版本改一下就行：
+————————————————
+
+                            版权声明：本文为博主原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接和本声明。
+
+原文链接：https://blog.csdn.net/weixin_49884065/article/details/130697672
