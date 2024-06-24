@@ -74,19 +74,19 @@ case $1 in
 "start")
 echo " =================== 启动 kafka 集群 ==================="
 echo " --------------- 启动 hadoop101 ---------------"
-ssh hadoop101 "/opt/module/redis/bin/redis-server /opt/module/redis/bin/redis.conf"
+/opt/module/redis/bin/redis-server /opt/module/redis/bin/redis.conf
 
 ;;
 "stop")
 echo " =================== 关闭 kafka 集群 ==================="
 echo " --------------- 关闭 hadoop101 ---------------"
-ssh hadoop101 "/opt/module/redis/bin/redis-cli shutdown"
+/opt/module/redis/bin/redis-cli shutdown
 
 ;;
 "status")
 echo " =================== 状态 kafka 集群 ==================="
 echo " --------------- 状态 hadoop101 ---------------"
-ssh hadoop101 "/opt/module/redis/bin/redis-cli info"
+/opt/module/redis/bin/redis-cli info
 
 ;;
 "cli")

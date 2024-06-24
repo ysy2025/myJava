@@ -2,6 +2,9 @@ package org.ysy.lease.web.admin.mapper;
 
 import org.ysy.lease.model.entity.AttrKey;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.ysy.lease.web.admin.vo.attr.AttrKeyVo;
+
+import java.util.List;
 
 /**
 * @author ysy
@@ -11,6 +14,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 */
 public interface AttrKeyMapper extends BaseMapper<AttrKey> {
 
+    List<AttrKeyVo> listAttrInfo();
 }
 
 

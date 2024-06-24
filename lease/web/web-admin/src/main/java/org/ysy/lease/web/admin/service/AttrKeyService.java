@@ -2,6 +2,9 @@ package org.ysy.lease.web.admin.service;
 
 import org.ysy.lease.model.entity.AttrKey;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.ysy.lease.web.admin.vo.attr.AttrKeyVo;
+
+import java.util.List;
 
 /**
 * @author ysy
@@ -10,4 +13,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface AttrKeyService extends IService<AttrKey> {
 
+    List<AttrKeyVo> listAttrInfo();
 }

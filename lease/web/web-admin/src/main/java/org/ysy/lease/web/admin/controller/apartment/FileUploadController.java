@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.ysy.lease.web.admin.service.FileService;
 
 
 @Tag(name = "文件管理")
@@ -16,10 +17,14 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 public class FileUploadController {
 
+
+    private FileService fileService;
     @Operation(summary = "上传文件")
     @PostMapping("upload")
     public Result<String> upload(@RequestParam MultipartFile file) {
-        return Result.ok();
+
+        String url = fileService.upload(file);
+        return Result.ok(url);
     }
 
 }

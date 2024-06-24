@@ -1,12 +1,16 @@
 package org.ysy.lease.web.admin.controller.apartment;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.ysy.lease.common.result.Result;
 import org.ysy.lease.model.entity.LabelInfo;
 import org.ysy.lease.model.enums.ItemType;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
+import org.ysy.lease.web.admin.service.LabelInfoService;
 
 import java.util.List;
 
@@ -15,22 +19,30 @@ import java.util.List;
 @RequestMapping("/admin/label")
 public class LabelController {
 
+    @Autowired
+    private LabelInfoService service;
+
     @Operation(summary = "（根据类型）查询标签列表")
     @GetMapping("list")
     public Result<List<LabelInfo>> labelList(@RequestParam(required = false) ItemType type) {
-        return Result.ok();
+        QueryWrapper<LabelInfo> wrapper = new QueryWrapper<>();
+        System.out.println(type);
+        wrapper.eq(type!=null, "type", type);
+        List<LabelInfo> list = service.list(wrapper);
+        return Result.ok(list);
     }
 
     @Operation(summary = "新增或修改标签信息")
     @PostMapping("saveOrUpdate")
     public Result saveOrUpdateLabel(@RequestBody LabelInfo labelInfo) {
-
+        service.saveOrUpdate(labelInfo);
         return Result.ok();
     }
 
     @Operation(summary = "根据id删除标签信息")
     @DeleteMapping("deleteById")
     public Result deleteLabelById(@RequestParam Long id) {
+        service.removeById(id);
         return Result.ok();
     }
 }
