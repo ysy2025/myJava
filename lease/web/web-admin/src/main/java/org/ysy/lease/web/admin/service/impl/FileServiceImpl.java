@@ -42,7 +42,7 @@ public class FileServiceImpl implements FileService {
                         build());
 
                 // 上传
-                minioClient.
+//                minioClient.
             }
             else {
 
