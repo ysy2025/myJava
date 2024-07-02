@@ -30,9 +30,7 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/myTest01/pom.xml" />
         <option value="$PROJECT_DIR$/myFlink01/pom.xml" />
-        <option value="$PROJECT_DIR$/myAntlr/pom.xml" />
         <option value="$PROJECT_DIR$/myFlink/pom.xml" />
       </list>
     </option>
@@ -42,5 +40,5 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

@@ -1,5 +1,6 @@
 //package com.ysy.myDoris;
 //
+// https://doris.apache.org/zh-CN/docs/ecosystem/flink-doris-connector/
 //import org.apache.doris.flink.cfg.DorisExecutionOptions;
 //import org.apache.doris.flink.cfg.DorisOptions;
 //import org.apache.doris.flink.cfg.DorisReadOptions;
