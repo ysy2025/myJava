@@ -26,13 +26,21 @@
       </list>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/myTest01/pom.xml" />
         <option value="$PROJECT_DIR$/myFlink01/pom.xml" />
         <option value="$PROJECT_DIR$/myAntlr/pom.xml" />
+        <option value="$PROJECT_DIR$/myFlink/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/myFlink01/pom.xml" />
+      </set>
+    </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="17" project-jdk-type="JavaSDK" />
 </project>
