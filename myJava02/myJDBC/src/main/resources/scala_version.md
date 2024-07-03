@@ -19,11 +19,11 @@ val stmt: Statement = conn.createStatement()
 val sql = """select r_name from ods2.region a"""
 
 try {
-  val bool = stmt.execute(sql)
-  println(bool)
+val bool = stmt.execute(sql)
+println(bool)
 } catch {
-  case e: Exception => e.printStackTrace()
+case e: Exception => e.printStackTrace()
 } finally {
-  if (stmt != null) stmt.close()
-  if (conn != null) conn.close()
+if (stmt != null) stmt.close()
+if (conn != null) conn.close()
 }

@@ -7,10 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myFlink" />
+        <module name="myJDBC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="myAntlr" target="1.8" />
       <module name="myFlink01" target="1.8" />
+      <module name="myTest01" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

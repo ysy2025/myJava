@@ -30,8 +30,11 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/myTest01/pom.xml" />
         <option value="$PROJECT_DIR$/myFlink01/pom.xml" />
+        <option value="$PROJECT_DIR$/myAntlr/pom.xml" />
         <option value="$PROJECT_DIR$/myFlink/pom.xml" />
+        <option value="$PROJECT_DIR$/myJDBC/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
