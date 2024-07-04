@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/myFlink/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myJDBC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myJDBC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myKafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myKafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myTest01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/myTest01/src/main/resources" charset="UTF-8" />
   </component>

@@ -1,14 +1,14 @@
-package org.ysy.kafka.producer;
+package com.ysy.customer;
 
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
-import java.util.concurrent.ExecutionException;
 
-public class myProducerSync {
+/*
+带有callback的,回传
+
+ */
+public class myProducerCallback {
     public static void main(String[] args) {
 
         // 0.提供配置
@@ -29,13 +29,16 @@ public class myProducerSync {
         System.out.println("========================333333333333333============================");
 
         // 2.发送数据
-        try {
-            myKafkaProducer.send(new ProducerRecord<>("first", "zhangsanSync")).get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
+        myKafkaProducer.send(new ProducerRecord<>("first", "zhangsan"), new Callback() {
+            @Override
+            public void onCompletion(RecordMetadata recordMetadata, Exception e) {
+                if (e == null){
+                    System.out.println("主题:" + recordMetadata.topic() + " 分区:" + recordMetadata.partition());
+                }else {
+                    System.out.println("Fuck U!");
+                }
+            }
+        });
         System.out.println("========================4444444444444444============================");
 //        for (int i = 0; i < 5; i++) {
 //            myKafkaProducer.send(new ProducerRecord<>("first", "zhangsan" + i));

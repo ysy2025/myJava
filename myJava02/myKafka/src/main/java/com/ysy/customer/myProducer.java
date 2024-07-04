@@ -1,4 +1,4 @@
-package org.ysy.kafka.producer;
+package com.ysy.customer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;

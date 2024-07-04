@@ -1,6 +1,5 @@
-package org.ysy.kafka.producer;
+package com.ysy.customer;
 
-import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
@@ -9,7 +8,7 @@ import java.util.Properties;
 带有callback的,回传
 
  */
-public class myProducerCallback {
+public class myProducerCallbackPartitions {
     public static void main(String[] args) {
 
         // 0.提供配置
@@ -30,7 +29,7 @@ public class myProducerCallback {
         System.out.println("========================333333333333333============================");
 
         // 2.发送数据
-        myKafkaProducer.send(new ProducerRecord<>("first", "zhangsan"), new Callback() {
+        myKafkaProducer.send(new ProducerRecord<>("first", 0, "", "zhangsan"), new Callback() {
             @Override
             public void onCompletion(RecordMetadata recordMetadata, Exception e) {
                 if (e == null){

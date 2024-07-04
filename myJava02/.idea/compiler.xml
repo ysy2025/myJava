@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myFlink" />
+        <module name="myKafka" />
         <module name="myJDBC" />
       </profile>
     </annotationProcessing>
