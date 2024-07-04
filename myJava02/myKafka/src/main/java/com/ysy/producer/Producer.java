@@ -1,11 +1,12 @@
 package com.ysy.producer;
 
+import com.ysy.properties.KafkaProperties;
+import com.ysy.util.LoginUtil;
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.config.ConfigException;
-import org.people.myKafka.security.LoginUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
