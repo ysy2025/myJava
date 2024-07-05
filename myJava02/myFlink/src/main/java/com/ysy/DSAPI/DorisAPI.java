@@ -94,16 +94,16 @@ public class DorisAPI {
 
         tenv.executeSql(printSinkSql);
 
-//        // 3 执行查询
-//        // 3.1 使用 sql 进行查询
-//        Table sourceTable = tenv.sqlQuery("select count(1) as cnt from source;");
-//        sourceTable.printSchema();
-//        // 注册成表名
-//        tenv.createTemporaryView("sourceTable", sourceTable);
-//        tenv.sqlQuery("select * from sourceTable");
-//
-//        // 4 输出表
-//        tenv.executeSql("insert into sink select * from source");
+        // 3 执行查询
+        // 3.1 使用 sql 进行查询
+        Table sourceTable = tenv.sqlQuery("select count(1) as cnt from source;");
+        sourceTable.printSchema();
+        // 注册成表名
+        tenv.createTemporaryView("sourceTable", sourceTable);
+        tenv.sqlQuery("select * from sourceTable");
+
+        // 4 输出表
+        tenv.executeSql("insert into sink select * from source");
 
 /*
 表流转换
@@ -111,8 +111,8 @@ https://blog.csdn.net/qq_36066039/article/details/126940477
 https://blog.csdn.net/weixin_45758499/article/details/125094832
  */
         // 3 执行查询
-        Table sourceTable = tenv.sqlQuery("select * from source");
-//        sourceTable.toDa
+//        Table sourceTable = tenv.sqlQuery("select * from source");
+////        sourceTable.toDa
         env.execute();
         // sqlapi
 
