@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>myLearning</module>
+        <module>myBatis</module>
+        <module>myHbase</module>
     </modules>
     <build>
         <plugins>
