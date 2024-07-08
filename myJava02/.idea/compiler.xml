@@ -9,6 +9,7 @@
         <module name="myFlink" />
         <module name="myKafka" />
         <module name="myJDBC" />
+        <module name="MyES" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
