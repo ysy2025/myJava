@@ -15,7 +15,7 @@ public enum WriterErrorCode implements ErrorCode {
 
     GET_ADS_TABLE_MEATA_FAILED("AdsWriter-11", "获取ADS table原信息失败");
 
-    
+
     private final String code;
     private final String description;
 
