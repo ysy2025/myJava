@@ -1,0 +1,39 @@
+[2024-06-20 14:05:02] 984 INFO client installation package : /tmp/FusionInsight-Client/FusionInsight_Cluster_1_Kafka_ClientConfig 
+[2024-06-20 14:05:02] 985 INFO client install parameters : /opt/Bigdata/client/Kafka 
+[2024-06-20 14:05:02] 288 INFO Pre-install check begin... 
+[2024-06-20 14:05:02] 365 INFO Checking necessary files and directory. 
+[2024-06-20 14:05:02] 395 INFO Checking NTP service status. 
+[2024-06-20 14:05:02] 343 INFO Checking "/etc/hosts" config. 
+[2024-06-20 14:05:03] 293 INFO Pre-install check is complete. 
+[2024-06-20 14:05:03] 794 INFO Precheck on components begin... 
+[2024-06-20 14:05:03] 827 INFO Precheck on components is complete. 
+[2024-06-20 14:05:04] 535 Warning: "10.31.69.24" already exists in "/etc/hosts", it will be modified. 
+[2024-06-20 14:05:04] 535 Warning: "10.31.70.132" already exists in "/etc/hosts", it will be modified. 
+[2024-06-20 14:05:04] 535 Warning: "10.31.71.17" already exists in "/etc/hosts", it will be modified. 
+[2024-06-20 14:05:04] 535 Warning: "10.31.71.125" already exists in "/etc/hosts", it will be modified. 
+[2024-06-20 14:05:04] 535 Warning: "10.31.69.221" already exists in "/etc/hosts", it will be modified. 
+[2024-06-20 14:05:04] 535 Warning: "10.31.71.229" already exists in "/etc/hosts", it will be modified. 
+[2024-06-20 14:05:05] 588 INFO Deploy "dest_hosts" is complete. 
+[2024-06-20 14:05:05] 626 INFO Install public library begin ... 
+[2024-06-20 14:05:05] 670 INFO Install components client begin ... 
+[2024-06-20 14:05:05] 698 INFO Begin to install JDK client.. 
+[2024-06-20 14:05:05] 610 INFO ExeScripts: /tmp/FusionInsight-Client/FusionInsight_Cluster_1_Kafka_ClientConfig/JDK/install.sh, ComponentDir:/opt/Bigdata/client/Kafka/JDK. 
+[24-06-20 14:05:05]: Decompress jdk.tar.gz to /opt/Bigdata/client/Kafka/JDK.
+/opt/Bigdata/client/Kafka/JDK
+[24-06-20 14:05:07]: Create JRE env file "/opt/Bigdata/client/Kafka/JDK/component_env".
+[2024-06-20 14:05:07] 712 Warning: /tmp/FusionInsight-Client/FusionInsight_Cluster_1_Kafka_ClientConfig/JDK/VERSION not exist. 
+[2024-06-20 14:05:07] 698 INFO Begin to install Kafka client.. 
+[2024-06-20 14:05:07] 610 INFO ExeScripts: /tmp/FusionInsight-Client/FusionInsight_Cluster_1_Kafka_ClientConfig/Kafka/install.sh, ComponentDir:/opt/Bigdata/client/Kafka/Kafka. 
+[24-06-20 14:05:07]: Copy /tmp/FusionInsight-Client/FusionInsight_Cluster_1_Kafka_ClientConfig/Kafka/install_files to /opt/Bigdata/client/Kafka/Kafka.
+/tmp/FusionInsight-Client/FusionInsight_Cluster_1_Kafka_ClientConfig/Kafka
+[24-06-20 14:05:07]: Copy Kafka config files to "/opt/Bigdata/client/Kafka/Kafka/./kafka/config"
+[24-06-20 14:05:07]: Create Kafka env file "/opt/Bigdata/client/Kafka/Kafka/component_env".
+[2024-06-20 14:05:07] 720 INFO ALL component client is installed successfully 
+[2024-06-20 14:05:07] 721 INFO Persisting client information to the database... 
+[2024-06-20 14:05:07] 919 INFO：/tmp has write permission. 
+[2024-06-20 14:05:07] 66 INFO Platform=x86_64 
+[2024-06-20 14:05:07] 143 INFO ClientIp=10.31.69.24 
+[2024-06-20 14:05:07] 160 INFO InstallUser=root 
+[2024-06-20 14:05:07] 210 INFO ClientPath=/opt/Bigdata/client/Kafka 
+[2024-06-20 14:05:07] 211 INFO installComponents=Kafka 
+[2024-06-20 14:05:09] 223 INFO Register successfully. 
