@@ -10,7 +10,9 @@ import java.util.List;
 
 @Data
 public class AttrKeyVo extends AttrKey {
-
+/*
+AttrKey子类,但是又包含了一个AttrValue list,可以看到是1:n的list集合
+ */
     @Schema(description = "属性value列表")
     private List<AttrValue> attrValueList;
 }

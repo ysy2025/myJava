@@ -6,27 +6,28 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="d0ad08d7-ad67-49e0-9fc2-ea219f48d38f">
-      <console name="vmware" type="STANDARD" schema="" session="Main"><![CDATA[select k.id,
-        k.name        key_name,
-        v.id          value_id,
-        v.name        value_name,
-        v.attr_key_id key_id
-    from attr_key k
-    join attr_value v
-    on k.id = v.attr_key_id
-    where k.is_deleted = 0
-    and v.is_deleted = 0;
+      <console name="vmware" type="STANDARD" schema="lease" session="Main"><![CDATA[select
+k.id          key_id,
+k.name        key_name,
+v.id          value_id,
+v.name        value_name,
+v.attr_key_id attr_key_id
+from attr_key k
+join attr_value v
+on k.id = v.attr_key_id
+where k.is_deleted = 0
+and v.is_deleted = 0;
 
 
 select * from fee_key;
@@ -50,6 +51,11 @@ select * from fee_value;]]></console>
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces>
+      <mapping database-type="MYSQL" interface-id="DEFAULT" />
+    </recently-used-interfaces>
+  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
       <connection id="d0ad08d7-ad67-49e0-9fc2-ea219f48d38f" active="true" signed="true">
@@ -63,7 +69,7 @@ select * from fee_value;]]></console>
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="192.168.10.101" />
+          <host value="192.168.1.101" />
           <port value="3306" />
           <database value="lease" />
           <tns-folder value="" />
@@ -279,7 +285,6 @@ select * from fee_value;]]></console>
           <content-type name="JSON" enabled="true" />
           <content-type name="JSON5" enabled="true" />
           <content-type name="Groovy" enabled="true" />
-          <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Manifest" enabled="true" />
         </content-types>
