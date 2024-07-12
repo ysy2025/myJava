@@ -16,14 +16,18 @@ public class MinioProperties {
     private String bucketName;
 
     public String getEndpoint() {
-        return "";
+        return this.endpoint;
     }
 
     public String getAccessKey() {
-        return "";
+        return this.accessKey;
     }
 
     public String getSecretKey() {
-        return "";
+        return this.secretKey;
+    }
+
+    public String getBucketName() {
+        return this.bucketName;
     }
 }

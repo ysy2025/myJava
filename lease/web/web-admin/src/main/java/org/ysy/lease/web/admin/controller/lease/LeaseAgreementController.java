@@ -4,8 +4,7 @@ package org.ysy.lease.web.admin.controller.lease;
 import org.ysy.lease.common.result.Result;
 import org.ysy.lease.model.entity.LeaseAgreement;
 import org.ysy.lease.model.enums.LeaseStatus;
-
-import org.ysy.lease.web.admin.vo.agreement.AgreementQueryVO;
+import org.ysy.lease.web.admin.vo.agreement.AgreementQueryVo;
 import org.ysy.lease.web.admin.vo.agreement.AgreementVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.swagger.v3.oas.annotations.Operation;
@@ -26,7 +25,7 @@ public class LeaseAgreementController {
 
     @Operation(summary = "根据条件分页查询租约列表")
     @GetMapping("page")
-    public Result<IPage<AgreementVo>> page(@RequestParam long current, @RequestParam long size, AgreementQueryVO queryVo) {
+    public Result<IPage<AgreementVo>> page(@RequestParam long current, @RequestParam long size, AgreementQueryVo queryVo) {
         return Result.ok();
     }
 
