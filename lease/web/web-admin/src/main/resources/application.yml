@@ -28,7 +28,8 @@ mybatis-plus:
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 
 minio:
-  endpoint: http://192.168.10.101:9000
+  #endpoint: http://192.168.10.101:9000
+  endpoint: http://192.168.1.101:9002
   access-key: minioadmin
   secret-key: minioadmin
   bucket-name: lease
