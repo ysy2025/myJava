@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.UUID;
 
 @Service
 public class FileServiceImpl implements FileService {
@@ -22,11 +25,11 @@ public class FileServiceImpl implements FileService {
     MinioProperties properties;
 
     @Override
-    public String upload(MultipartFile file) {
-        try {
+    public String upload(MultipartFile file) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
+//        try {
             boolean isExists = client.bucketExists(BucketExistsArgs.builder().bucket(properties.getBucketName()).build());
             // 不存在此桶
-            if (!isExists){
+            if (!isExists) {
                 // 建
                 client.makeBucket(MakeBucketArgs.builder().bucket(properties.getBucketName()).build());
 
@@ -38,15 +41,28 @@ public class FileServiceImpl implements FileService {
 
                 // 上传本地磁盘文件到minio,但是这里的file是Multipartfile,不是本地文件了
 //                client.uploadObject();
+            }
+                // file name
+                String filename = new SimpleDateFormat("yyyyMMdd").format(
+                        new Date()) + "/" + UUID.randomUUID() + "-" + file.getOriginalFilename();
 
                 // 从stream 上传
-                client.putObject(PutObjectArgs.builder().stream().build());
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+                client.putObject(PutObjectArgs.builder().
+                        bucket(properties.getBucketName()).
+                        stream(file.getInputStream(),file.getSize(),-1).
+                        object(filename).
+                        contentType(file.getContentType()).
+                        build());
 
-        return "";
+                String url = String.join("/", properties.getEndpoint(), properties.getBucketName(), filename);
+
+                return url;
+
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
+//        return null;
     }
 
     private String createBucketPolicyConfig(String bucketName) {
