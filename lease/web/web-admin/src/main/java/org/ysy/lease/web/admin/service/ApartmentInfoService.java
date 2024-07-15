@@ -1,7 +1,11 @@
 package org.ysy.lease.web.admin.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.ysy.lease.model.entity.ApartmentInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.ysy.lease.web.admin.vo.apartment.ApartmentItemVo;
+import org.ysy.lease.web.admin.vo.apartment.ApartmentQueryVo;
+import org.ysy.lease.web.admin.vo.apartment.ApartmentSubmitVo;
 
 /**
 * @author liubo
@@ -10,4 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface ApartmentInfoService extends IService<ApartmentInfo> {
 
+    void saveOrUpdateApartment(ApartmentSubmitVo apartmentSubmitVo);
+
+    Page<ApartmentItemVo> pageItem(Page<ApartmentItemVo> page, ApartmentQueryVo queryVo);
 }

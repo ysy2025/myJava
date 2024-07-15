@@ -2,11 +2,13 @@ package org.ysy.lease.model.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.util.Date;
 
+@Data
 public class BaseEntity implements Serializable {
 
     @Schema(description = "主键")
