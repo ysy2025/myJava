@@ -85,7 +85,7 @@ public class DorisAPI {
                 "    ) \n" +
                 "    WITH (\n" +
                 "      'connector' = 'doris',\n" +
-                "      'fenodes' = '10.31.69.24:8030',\n" +
+                "      'fenodes' = '192.168.1.101:8030',\n" +
                 "      'table.identifier' = 'doris.temp',\n" +
                 "      'username' = 'root',\n" +
                 "      'password' = '',\n" +
