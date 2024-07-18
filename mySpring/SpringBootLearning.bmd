@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document type="BLUMIND" editor_version="3.2.902.24361" document_version="3.0.0.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org-->
+  <information>
+    <author>dell</author>
+    <company>
+    </company>
+    <version>3.0</version>
+    <description>
+    </description>
+  </information>
+  <attributes>
+    <item name="editor_show_sidebar">False</item>
+  </attributes>
+  <charts active_chart="0">
+    <chart name="新页面 1" type="MindMap">
+      <remark>
+      </remark>
+      <layout>MIND_MAP</layout>
+      <style>
+        <back_color>DarkGreen</back_color>
+        <fore_color>Black</fore_color>
+        <line_color>LightSlateGray</line_color>
+        <border_color>SlateGray</border_color>
+        <node_back_color>LightGray</node_back_color>
+        <node_fore_color>Black</node_fore_color>
+        <select_color>RoyalBlue</select_color>
+        <hover_color>MediumSlateBlue</hover_color>
+        <link_line_color>Green</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+      </style>
+      <nodes>
+        <node id="1" text="spring" x="1148" y="377" width="66" height="41" text_b="12, 12, 42, 17">
+          <style>
+            <back_color>Silver</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>Black</border_color>
+            <shape>1</shape>
+            <round_radius>2</round_radius>
+            <padding>12</padding>
+          </style>
+          <nodes>
+            <node id="2" text="chapter3 全注解下的springIOC" x="883" y="387" width="185" height="21" text_b="2, 2, 181, 17" fold_btn_b="869, 391, 13, 13">
+              <nodes>
+                <node id="3" text="概述" x="770" y="302" width="33" height="21" text_b="2, 2, 29, 17" fold_btn_b="756, 306, 13, 13">
+                  <nodes>
+                    <node id="4" text="spring最成功的是理念" x="558" y="147" width="132" height="21" text_b="2, 2, 128, 17" />
+                    <node id="5" text="控制反转 inversion of control" x="513" y="302" width="177" height="21" text_b="2, 2, 173, 17" fold_btn_b="499, 306, 13, 13">
+                      <nodes>
+                        <node id="6" text="通过描述来生成或者获取对象的技术" x="227" y="178" width="206" height="21" text_b="2, 2, 202, 17" />
+                        <node id="7" text="一般用new关键字来穿件对象;spring中是通过描述来创造对象的" x="76" y="209" width="357" height="21" text_b="2, 2, 353, 17" />
+                        <node id="8" text="spring不用xml,而是注解" x="289" y="240" width="144" height="21" text_b="2, 2, 140, 17" />
+                        <node id="9" text="spring可以生成各种对象,并且需要管理.对象之间是关联的,可能有依赖关系" x="20" y="271" width="413" height="21" text_b="2, 2, 409, 17" />
+                        <node id="10" text="spring提供了依赖注入的功能" x="264" y="302" width="169" height="21" text_b="2, 2, 165, 17" />
+                        <node id="11" text="spring中把每个需要管理的对象称为spring bean" x="157" y="333" width="276" height="21" text_b="2, 2, 272, 17" />
+                        <node id="12" text="spring IOC容器,用来管理Spring Bean." x="210" y="364" width="223" height="21" text_b="2, 2, 219, 17" />
+                        <node id="13" text="IOC,两个功能&#xD;&#xA;通过描述管理Bean,包括发布可获取bean&#xD;&#xA;通过描述完成bean的依赖关系" x="202" y="395" width="231" height="52" text_b="2, 2, 227, 48" />
+                      </nodes>
+                      <lines>
+                        <line target="6" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="227, 178, 206, 21" />
+                        <line target="7" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="76, 209, 357, 21" />
+                        <line target="8" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="289, 240, 144, 21" />
+                        <line target="9" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="20, 271, 413, 21" />
+                        <line target="10" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="264, 302, 169, 21" />
+                        <line target="11" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="157, 333, 276, 21" />
+                        <line target="12" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="210, 364, 223, 21" />
+                        <line target="13" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="202, 395, 231, 52" />
+                      </lines>
+                    </node>
+                    <node id="14" text="面向切面编程 aspect oriented programming" x="426" y="457" width="264" height="21" text_b="2, 2, 260, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="4" begin_side="Left" end_side="Right" begin_rect="757, 302, 46, 21" end_rect="558, 147, 132, 21" />
+                    <line target="5" begin_side="Left" end_side="Right" begin_rect="757, 302, 46, 21" end_rect="513, 302, 177, 21" />
+                    <line target="14" begin_side="Left" end_side="Right" begin_rect="757, 302, 46, 21" end_rect="426, 457, 264, 21" />
+                  </lines>
+                </node>
+                <node id="15" text="3.1 IoC容器简介" x="704" y="558" width="99" height="21" text_b="2, 2, 95, 17" fold_btn_b="690, 562, 13, 13">
+                  <nodes>
+                    <node id="16" text="IOC容器是管理Bean的容器&#xD;&#xA;IOC容器都要实现BeanFactory,这是一个顶级容器接口" x="320" y="488" width="304" height="36" text_b="2, 2, 300, 32" />
+                    <node id="17" text="SpringIOC中允许按照类型或者名称获取Bean的." x="350" y="534" width="274" height="21" text_b="2, 2, 270, 17" />
+                    <node id="18" text="默认SpringIOC中Bean是单例.getBean方法返回同一个对象" x="289" y="565" width="335" height="21" text_b="2, 2, 331, 17" />
+                    <node id="19" text="BeanFactory功能不够强大;加上ApplicationContext,子接口,构成了核心的类" x="198" y="596" width="426" height="21" text_b="2, 2, 422, 17" />
+                    <node id="20" text="BeanFactory扩展了更多接口,导致功能更加强大" x="355" y="627" width="269" height="21" text_b="2, 2, 265, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="16" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="320, 488, 304, 36" />
+                    <line target="17" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="350, 534, 274, 21" />
+                    <line target="18" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="289, 565, 335, 21" />
+                    <line target="19" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="198, 596, 426, 21" />
+                    <line target="20" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="355, 627, 269, 21" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="3" begin_side="Left" end_side="Right" begin_rect="870, 387, 198, 21" end_rect="770, 302, 33, 21" />
+                <line target="15" begin_side="Left" end_side="Right" begin_rect="870, 387, 198, 21" end_rect="704, 558, 99, 21" />
+              </lines>
+            </node>
+          </nodes>
+          <lines>
+            <line target="2" begin_side="Left" end_side="Right" begin_rect="1148, 377, 66, 41" end_rect="883, 387, 185, 21" />
+          </lines>
+        </node>
+      </nodes>
+    </chart>
+  </charts>
+</document>
