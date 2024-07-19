@@ -31,7 +31,7 @@
         <picture_thumb_size>100, 100</picture_thumb_size>
       </style>
       <nodes>
-        <node id="1" text="spring" x="1148" y="377" width="66" height="41" text_b="12, 12, 42, 17">
+        <node id="1" text="spring" x="1148" y="378" width="66" height="41" text_b="12, 12, 42, 17">
           <style>
             <back_color>Silver</back_color>
             <fore_color>Black</fore_color>
@@ -41,66 +41,110 @@
             <padding>12</padding>
           </style>
           <nodes>
-            <node id="2" text="chapter3 全注解下的springIOC" x="883" y="387" width="185" height="21" text_b="2, 2, 181, 17" fold_btn_b="869, 391, 13, 13">
+            <node id="2" text="chapter3 全注解下的springIOC" x="883" y="388" width="185" height="21" text_b="2, 2, 181, 17" fold_btn_b="869, 392, 13, 13">
               <nodes>
-                <node id="3" text="概述" x="770" y="302" width="33" height="21" text_b="2, 2, 29, 17" fold_btn_b="756, 306, 13, 13">
+                <node id="3" text="概述" x="770" y="194" width="33" height="21" text_b="2, 2, 29, 17" fold_btn_b="756, 198, 13, 13">
                   <nodes>
-                    <node id="4" text="spring最成功的是理念" x="558" y="147" width="132" height="21" text_b="2, 2, 128, 17" />
-                    <node id="5" text="控制反转 inversion of control" x="513" y="302" width="177" height="21" text_b="2, 2, 173, 17" fold_btn_b="499, 306, 13, 13">
+                    <node id="4" text="spring最成功的是理念" x="558" y="39" width="132" height="21" text_b="2, 2, 128, 17" />
+                    <node id="5" text="控制反转 inversion of control" x="513" y="194" width="177" height="21" text_b="2, 2, 173, 17" fold_btn_b="499, 198, 13, 13">
                       <nodes>
-                        <node id="6" text="通过描述来生成或者获取对象的技术" x="227" y="178" width="206" height="21" text_b="2, 2, 202, 17" />
-                        <node id="7" text="一般用new关键字来穿件对象;spring中是通过描述来创造对象的" x="76" y="209" width="357" height="21" text_b="2, 2, 353, 17" />
-                        <node id="8" text="spring不用xml,而是注解" x="289" y="240" width="144" height="21" text_b="2, 2, 140, 17" />
-                        <node id="9" text="spring可以生成各种对象,并且需要管理.对象之间是关联的,可能有依赖关系" x="20" y="271" width="413" height="21" text_b="2, 2, 409, 17" />
-                        <node id="10" text="spring提供了依赖注入的功能" x="264" y="302" width="169" height="21" text_b="2, 2, 165, 17" />
-                        <node id="11" text="spring中把每个需要管理的对象称为spring bean" x="157" y="333" width="276" height="21" text_b="2, 2, 272, 17" />
-                        <node id="12" text="spring IOC容器,用来管理Spring Bean." x="210" y="364" width="223" height="21" text_b="2, 2, 219, 17" />
-                        <node id="13" text="IOC,两个功能&#xD;&#xA;通过描述管理Bean,包括发布可获取bean&#xD;&#xA;通过描述完成bean的依赖关系" x="202" y="395" width="231" height="52" text_b="2, 2, 227, 48" />
+                        <node id="6" text="通过描述来生成或者获取对象的技术" x="227" y="70" width="206" height="21" text_b="2, 2, 202, 17" />
+                        <node id="7" text="一般用new关键字来穿件对象;spring中是通过描述来创造对象的" x="76" y="101" width="357" height="21" text_b="2, 2, 353, 17" />
+                        <node id="8" text="spring不用xml,而是注解" x="289" y="132" width="144" height="21" text_b="2, 2, 140, 17" />
+                        <node id="9" text="spring可以生成各种对象,并且需要管理.对象之间是关联的,可能有依赖关系" x="20" y="163" width="413" height="21" text_b="2, 2, 409, 17" />
+                        <node id="10" text="spring提供了依赖注入的功能" x="264" y="194" width="169" height="21" text_b="2, 2, 165, 17" />
+                        <node id="11" text="spring中把每个需要管理的对象称为spring bean" x="157" y="225" width="276" height="21" text_b="2, 2, 272, 17" />
+                        <node id="12" text="spring IOC容器,用来管理Spring Bean." x="210" y="256" width="223" height="21" text_b="2, 2, 219, 17" />
+                        <node id="13" text="IOC,两个功能&#xD;&#xA;通过描述管理Bean,包括发布可获取bean&#xD;&#xA;通过描述完成bean的依赖关系" x="202" y="287" width="231" height="52" text_b="2, 2, 227, 48" />
                       </nodes>
                       <lines>
-                        <line target="6" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="227, 178, 206, 21" />
-                        <line target="7" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="76, 209, 357, 21" />
-                        <line target="8" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="289, 240, 144, 21" />
-                        <line target="9" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="20, 271, 413, 21" />
-                        <line target="10" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="264, 302, 169, 21" />
-                        <line target="11" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="157, 333, 276, 21" />
-                        <line target="12" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="210, 364, 223, 21" />
-                        <line target="13" begin_side="Left" end_side="Right" begin_rect="500, 302, 190, 21" end_rect="202, 395, 231, 52" />
+                        <line target="6" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="227, 70, 206, 21" />
+                        <line target="7" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="76, 101, 357, 21" />
+                        <line target="8" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="289, 132, 144, 21" />
+                        <line target="9" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="20, 163, 413, 21" />
+                        <line target="10" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="264, 194, 169, 21" />
+                        <line target="11" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="157, 225, 276, 21" />
+                        <line target="12" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="210, 256, 223, 21" />
+                        <line target="13" begin_side="Left" end_side="Right" begin_rect="500, 194, 190, 21" end_rect="202, 287, 231, 52" />
                       </lines>
                     </node>
-                    <node id="14" text="面向切面编程 aspect oriented programming" x="426" y="457" width="264" height="21" text_b="2, 2, 260, 17" />
+                    <node id="14" text="面向切面编程 aspect oriented programming" x="426" y="349" width="264" height="21" text_b="2, 2, 260, 17" />
                   </nodes>
                   <lines>
-                    <line target="4" begin_side="Left" end_side="Right" begin_rect="757, 302, 46, 21" end_rect="558, 147, 132, 21" />
-                    <line target="5" begin_side="Left" end_side="Right" begin_rect="757, 302, 46, 21" end_rect="513, 302, 177, 21" />
-                    <line target="14" begin_side="Left" end_side="Right" begin_rect="757, 302, 46, 21" end_rect="426, 457, 264, 21" />
+                    <line target="4" begin_side="Left" end_side="Right" begin_rect="757, 194, 46, 21" end_rect="558, 39, 132, 21" />
+                    <line target="5" begin_side="Left" end_side="Right" begin_rect="757, 194, 46, 21" end_rect="513, 194, 177, 21" />
+                    <line target="14" begin_side="Left" end_side="Right" begin_rect="757, 194, 46, 21" end_rect="426, 349, 264, 21" />
                   </lines>
                 </node>
-                <node id="15" text="3.1 IoC容器简介" x="704" y="558" width="99" height="21" text_b="2, 2, 95, 17" fold_btn_b="690, 562, 13, 13">
+                <node id="15" text="3.1 IoC容器简介" x="704" y="450" width="99" height="21" text_b="2, 2, 95, 17" fold_btn_b="690, 454, 13, 13">
                   <nodes>
-                    <node id="16" text="IOC容器是管理Bean的容器&#xD;&#xA;IOC容器都要实现BeanFactory,这是一个顶级容器接口" x="320" y="488" width="304" height="36" text_b="2, 2, 300, 32" />
-                    <node id="17" text="SpringIOC中允许按照类型或者名称获取Bean的." x="350" y="534" width="274" height="21" text_b="2, 2, 270, 17" />
-                    <node id="18" text="默认SpringIOC中Bean是单例.getBean方法返回同一个对象" x="289" y="565" width="335" height="21" text_b="2, 2, 331, 17" />
-                    <node id="19" text="BeanFactory功能不够强大;加上ApplicationContext,子接口,构成了核心的类" x="198" y="596" width="426" height="21" text_b="2, 2, 422, 17" />
-                    <node id="20" text="BeanFactory扩展了更多接口,导致功能更加强大" x="355" y="627" width="269" height="21" text_b="2, 2, 265, 17" />
+                    <node id="16" text="IOC容器是管理Bean的容器&#xD;&#xA;IOC容器都要实现BeanFactory,这是一个顶级容器接口" x="320" y="380" width="304" height="36" text_b="2, 2, 300, 32" />
+                    <node id="17" text="SpringIOC中允许按照类型或者名称获取Bean的." x="350" y="426" width="274" height="21" text_b="2, 2, 270, 17" />
+                    <node id="18" text="默认SpringIOC中Bean是单例.getBean方法返回同一个对象" x="289" y="457" width="335" height="21" text_b="2, 2, 331, 17" />
+                    <node id="19" text="BeanFactory功能不够强大;加上ApplicationContext,子接口,构成了核心的类" x="198" y="488" width="426" height="21" text_b="2, 2, 422, 17" />
+                    <node id="20" text="BeanFactory扩展了更多接口,导致功能更加强大" x="355" y="519" width="269" height="21" text_b="2, 2, 265, 17" />
                   </nodes>
                   <lines>
-                    <line target="16" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="320, 488, 304, 36" />
-                    <line target="17" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="350, 534, 274, 21" />
-                    <line target="18" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="289, 565, 335, 21" />
-                    <line target="19" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="198, 596, 426, 21" />
-                    <line target="20" begin_side="Left" end_side="Right" begin_rect="691, 558, 112, 21" end_rect="355, 627, 269, 21" />
+                    <line target="16" begin_side="Left" end_side="Right" begin_rect="691, 450, 112, 21" end_rect="320, 380, 304, 36" />
+                    <line target="17" begin_side="Left" end_side="Right" begin_rect="691, 450, 112, 21" end_rect="350, 426, 274, 21" />
+                    <line target="18" begin_side="Left" end_side="Right" begin_rect="691, 450, 112, 21" end_rect="289, 457, 335, 21" />
+                    <line target="19" begin_side="Left" end_side="Right" begin_rect="691, 450, 112, 21" end_rect="198, 488, 426, 21" />
+                    <line target="20" begin_side="Left" end_side="Right" begin_rect="691, 450, 112, 21" end_rect="355, 519, 269, 21" />
                   </lines>
                 </node>
+                <node id="1" text="3.6 条件装配Bean" x="695" y="566" width="108" height="21" text_b="2, 2, 104, 17" fold_btn_b="681, 570, 13, 13">
+                  <nodes>
+                    <node id="2" text="有时候Bean无法装配.此时不去装配比较好." x="374" y="550" width="241" height="21" text_b="2, 2, 237, 17" />
+                    <node id="4" text="@Conditional注解,需要配合另一个接口,来完成条件装配." x="294" y="581" width="321" height="21" text_b="2, 2, 317, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="2" begin_side="Left" end_side="Right" begin_rect="682, 566, 121, 21" end_rect="374, 550, 241, 21" />
+                    <line target="4" begin_side="Left" end_side="Right" begin_rect="682, 566, 121, 21" end_rect="294, 581, 321, 21" />
+                  </lines>
+                </node>
+                <node id="5" text="3.7 bean的作用域" x="695" y="612" width="108" height="21" text_b="2, 2, 104, 17" fold_btn_b="681, 616, 13, 13">
+                  <nodes>
+                    <node id="6" text="单例,或者原型(可以实例化多个)" x="435" y="612" width="180" height="21" text_b="2, 2, 176, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="6" begin_side="Left" end_side="Right" begin_rect="682, 612, 121, 21" end_rect="435, 612, 180, 21" />
+                  </lines>
+                </node>
+                <node id="7" text="3.8 @Profile注解" x="698" y="643" width="105" height="21" text_b="2, 2, 101, 17" fold_btn_b="684, 647, 13, 13">
+                  <nodes>
+                    <node id="8" text="企业开发环境切换的注解" x="474" y="643" width="144" height="21" text_b="2, 2, 140, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="8" begin_side="Left" end_side="Right" begin_rect="685, 643, 118, 21" end_rect="474, 643, 144, 21" />
+                  </lines>
+                </node>
+                <node id="9" text="3.9 引入xml配置bean" x="673" y="690" width="130" height="21" text_b="2, 2, 126, 17" fold_btn_b="659, 694, 13, 13">
+                  <nodes>
+                    <node id="10" text="@ImportSecure注解,通过引入对应的xml,用来加载bean" x="275" y="674" width="318" height="21" text_b="2, 2, 314, 17" />
+                    <node id="11" text="通过设置xml的配置文件,然后加上注解即可" x="350" y="705" width="243" height="21" text_b="2, 2, 239, 17" />
+                  </nodes>
+                  <lines>
+                    <line target="10" begin_side="Left" end_side="Right" begin_rect="660, 690, 143, 21" end_rect="275, 674, 318, 21" />
+                    <line target="11" begin_side="Left" end_side="Right" begin_rect="660, 690, 143, 21" end_rect="350, 705, 243, 21" />
+                  </lines>
+                </node>
+                <node id="12" text="3.10 使用SpringEL" x="690" y="736" width="113" height="21" text_b="2, 2, 109, 17" />
               </nodes>
               <lines>
-                <line target="3" begin_side="Left" end_side="Right" begin_rect="870, 387, 198, 21" end_rect="770, 302, 33, 21" />
-                <line target="15" begin_side="Left" end_side="Right" begin_rect="870, 387, 198, 21" end_rect="704, 558, 99, 21" />
+                <line target="3" begin_side="Left" end_side="Right" begin_rect="870, 388, 198, 21" end_rect="770, 194, 33, 21" />
+                <line target="15" begin_side="Left" end_side="Right" begin_rect="870, 388, 198, 21" end_rect="704, 450, 99, 21" />
+                <line target="1" begin_side="Left" end_side="Right" begin_rect="870, 388, 198, 21" end_rect="695, 566, 108, 21" />
+                <line target="5" begin_side="Left" end_side="Right" begin_rect="870, 388, 198, 21" end_rect="695, 612, 108, 21" />
+                <line target="7" begin_side="Left" end_side="Right" begin_rect="870, 388, 198, 21" end_rect="698, 643, 105, 21" />
+                <line target="9" begin_side="Left" end_side="Right" begin_rect="870, 388, 198, 21" end_rect="673, 690, 130, 21" />
+                <line target="12" begin_side="Left" end_side="Right" begin_rect="870, 388, 198, 21" end_rect="690, 736, 113, 21" />
               </lines>
             </node>
+            <node id="3" text="chapter4 开始约定编程 SpringAOP" x="1294" y="388" width="207" height="21" text_b="2, 2, 203, 17" />
           </nodes>
           <lines>
-            <line target="2" begin_side="Left" end_side="Right" begin_rect="1148, 377, 66, 41" end_rect="883, 387, 185, 21" />
+            <line target="2" begin_side="Left" end_side="Right" begin_rect="1148, 378, 66, 41" end_rect="883, 388, 185, 21" />
+            <line target="3" begin_side="Right" end_side="Left" begin_rect="1148, 378, 66, 41" end_rect="1294, 388, 207, 21" />
           </lines>
         </node>
       </nodes>
