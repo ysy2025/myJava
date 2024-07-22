@@ -29,6 +29,7 @@
         <alibaba.fastjson2.version>2.0.50</alibaba.fastjson2.version>
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
         <mysql.version>8.0.32</mysql.version>
+        <knife4j.version>4.1.0</knife4j.version>
     </properties>
 
 </project>
