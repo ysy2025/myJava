@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String index(ModelMap map) {
-        map.addAttribute("host", "https://blog.didispace.com");
+//        map.addAttribute("host", "https://blog.didispace.com");
         return "index";
     }
 
